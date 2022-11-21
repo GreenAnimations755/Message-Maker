@@ -30,6 +30,8 @@ MsgMaker.MakeHint = function(config)
     hint_2.TextWrapped = true
     
     UITextSizeConstraint.Parent = hint_2
+    wait(config.Duration)
+    hint:Destroy()
 end
 
 MsgMaker.MakeMessage = function(config)
@@ -72,6 +74,8 @@ MsgMaker.MakeMessage = function(config)
     message_2.TextWrapped = true
     
     UITextSizeConstraint.Parent = message_2
+    wait(config.Duration)
+    message:Destroy()
 end
 
 return MsgMaker
